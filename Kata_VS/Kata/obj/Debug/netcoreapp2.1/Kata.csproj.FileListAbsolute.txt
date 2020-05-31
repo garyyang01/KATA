@@ -1,0 +1,14 @@
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Kata.deps.json
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Kata.runtimeconfig.json
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Kata.runtimeconfig.dev.json
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Kata.dll
+D:\KATA_VS\kata\Kata\Kata\bin\Debug\netcoreapp2.1\Kata.pdb
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.csprojAssemblyReference.cache
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.csproj.CoreCompileInputs.cache
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.AssemblyInfoInputs.cache
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.AssemblyInfo.cs
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.dll
+D:\KATA_VS\kata\Kata\Kata\obj\Debug\netcoreapp2.1\Kata.pdb
