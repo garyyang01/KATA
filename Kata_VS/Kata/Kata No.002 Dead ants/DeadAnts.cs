@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kata
 {
@@ -12,32 +13,20 @@ namespace Kata
             return MaxAntParts(antParts);
         }
 
-        private static int MaxAntParts(int[] antParts)
+        private static int MaxAntParts(Dictionary<char, int> antParts)
         {
-            return Math.Max(Math.Max(antParts[0], antParts[1]), antParts[2]);
+            return Math.Max(Math.Max(antParts['a'], antParts['n']), antParts['t']);
         }
 
-        private static int[] CountAntParts(string input)
+        private static Dictionary<char, int> CountAntParts(string input)
         {
-            int[] antParts = new int[] { 0, 0, 0 };
-            for (int i = 0; i < input.Length; i++)
+            Dictionary<char, int> antParts = new Dictionary<char, int>();
+            antParts.Add('a', 0);
+            antParts.Add('n', 0);
+            antParts.Add('t', 0);
+            foreach (var antPart in input)
             {
-                switch (input[i])
-                {
-                    case 'a':
-                        antParts[0]++;
-                        break;
-
-                    case 'n':
-                        antParts[1]++;
-                        break;
-
-                    case 't':
-                        antParts[2]++;
-                        break;
-
-                    default: break;
-                }
+                antParts[antPart]++;
             }
 
             return antParts;
@@ -45,7 +34,7 @@ namespace Kata
 
         private static string RemoveCompleteAnts(string input)
         {
-            return input.Replace("ant", " ");
+            return input.Replace("ant", "").Replace(".","");
         }
 
         private static bool InValidInput(string ants)
