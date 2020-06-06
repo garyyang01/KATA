@@ -8,21 +8,20 @@ namespace Kata
 
         public string Average(string input)
         {
-            if (!ValidateInput(input)) return "n/a";
+            if (InvalidateInput(input)) return "n/a";
             string[] numberArray = input.Split(" ");
-            if (!TryGetAverage(numberArray, out var averageNum)) return "n/a";
-            return _dictionary[averageNum / numberArray.Length];
+            if (!TryGetSum(numberArray, out var sumNum)) return "n/a";
+            return _dictionary[sumNum / numberArray.Length];
         }
 
-        private static bool ValidateInput(string input)
+        private static bool InvalidateInput(string input)
         {
-            if (string.IsNullOrEmpty(input)) return false;
-            return true;
+            return string.IsNullOrEmpty(input);
         }
 
-        private bool TryGetAverage(string[] numberArray, out int averageNum)
+        private bool TryGetSum(string[] numberArray, out int sumNum)
         {
-            averageNum = 0;
+            sumNum = 0;
             for (int i = 0; i < numberArray.Length; i++)
             {
                 if (!TryConvertToNumber(numberArray[i], out var number))
@@ -30,7 +29,7 @@ namespace Kata
                     return false;
                 }
 
-                averageNum += number;
+                sumNum += number;
             }
 
             return true;
