@@ -1,12 +1,6 @@
 using System;
 public class Kata
 {
-  public static int DeadAntCount(string ants)
-  {
-    if (ants==null)return 0;
-    ants=ants.Replace("ant"," ");
-    int[]ant=new int[]{0,0,0};public class Kata
-{
   public static string BandNameGenerator(string str)
   {
     if(string.IsNullOrEmpty(str))return "";
