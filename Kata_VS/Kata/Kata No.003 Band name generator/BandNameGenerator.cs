@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Kata
+﻿namespace Kata
 {
     public class BandNameGenerator
     {
