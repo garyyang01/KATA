@@ -34,7 +34,7 @@ namespace Kata
 
         private static string RemoveCompleteAnts(string input)
         {
-            return input.Replace("ant", "").Replace(".","");
+            return input.Replace("ant", "").Replace(".", "");
         }
 
         private static bool InValidInput(string ants)
