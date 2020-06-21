@@ -70,8 +70,8 @@ namespace Kata
             else
             {
                 Assert.AreEqual(expected.Length, output.Length, "array length not equal");
-                Assert.AreEqual(expected[0], output[0], "oneNum not equal");
-                Assert.AreEqual(expected[1], output[1], "twoNum not equal");
+                Assert.AreEqual(expected[0], output[0], "firstNum not equal");
+                Assert.AreEqual(expected[1], output[1], "secondNum not equal");
             }
         }
     }
