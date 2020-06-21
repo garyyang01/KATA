@@ -72,11 +72,13 @@ namespace Kata
         {
             ShouldBeEqual("n/a", _stringAverage.Average("ONE TWOee THREErr FOURteen FIVE"));
         }
+
         [TestMethod]
         public void oNe_tWo_tHree_fOur_fIve()
         {
             ShouldBeEqual("three", _stringAverage.Average("oNe tWo tHree fOur fIve"));
         }
+
         [TestMethod]
         public void NULL()
         {
