@@ -4,7 +4,10 @@
     {
         public string GenerateBandName(string input)
         {
-            if (InValidInput(input)) return "";
+            if (InValidInput(input))
+            {
+                return "";
+            }
             if (StartEndSameLetter(input))
             {
                 string last = RemoveFirstLetter(input);
