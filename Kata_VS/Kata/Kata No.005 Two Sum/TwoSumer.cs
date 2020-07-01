@@ -7,7 +7,10 @@ namespace Kata
     {
         public int[] GetSumTwo(int[] numArray, int target)
         {
-            if (IsInValidInput(numArray, target)) return null;
+            if (IsInValidInput(numArray, target))
+            {
+                return null;
+            }
             List<int> numList = numArray.ToList();
             int[] ans = new int[2];
             foreach (var firstNum in numList)
