@@ -7,7 +7,10 @@ namespace Kata
     {
         public int CountDeadAnts(string input)
         {
-            if (InValidInput(input)) return 0;
+            if (InValidInput(input))
+            {
+                return 0;
+            }
             input = RemoveCompleteAnts(input);
             var antParts = CountAntParts(input);
             return MaxAntParts(antParts);
