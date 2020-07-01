@@ -8,9 +8,15 @@ namespace Kata
 
         public string Average(string input)
         {
-            if (InvalidateInput(input)) return "n/a";
+            if (InvalidateInput(input))
+            {
+                return "n/a";
+            }
             string[] numberArray = input.Split(" ");
-            if (!TryGetSum(numberArray, out var sumNum)) return "n/a";
+            if (!TryGetSum(numberArray, out var sumNum))
+            {
+                return "n/a";
+            }
             return _dictionary[sumNum / numberArray.Length];
         }
 
