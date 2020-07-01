@@ -6,7 +6,10 @@ namespace Kata
     {
         public int CountDuplicates(string input)
         {
-            if (IsInValidInput(input)) return 0;
+            if (IsInValidInput(input))
+            {
+                return 0;
+            }
             var ans = CountDuplicateCharater(input);
             return ans;
         }
