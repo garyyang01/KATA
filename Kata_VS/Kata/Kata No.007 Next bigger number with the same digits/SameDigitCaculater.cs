@@ -21,7 +21,7 @@ namespace Kata
                     var leftPart = digitList.Substring(0, i - 1);
                     var key = digitList[i - 1];
                     var rightPart = digitList.Substring(i);
-                    var newKey = GetNewKey(rightPart, key, out var newKeyIndex);
+                    GetNewKey(rightPart, key, out var newKeyIndex,out var newKey);
                     var newRightPart = GetNewRightPart(rightPart, newKeyIndex, key);
                     return SetAns(leftPart, newKey, newRightPart);
                 }
@@ -31,8 +31,7 @@ namespace Kata
 
         private static long SetAns(string leftPart, char newKey, List<char> newRightPart)
         {
-            string ans = leftPart + newKey + ConvertCharListToString(newRightPart);
-            return Convert.ToInt64(ans);
+            return Convert.ToInt64(leftPart + newKey + ConvertCharListToString(newRightPart));
         }
 
         private static string ConvertCharListToString(List<char> newRightPart)
@@ -48,9 +47,9 @@ namespace Kata
             return newRightPart;
         }
 
-        private static char GetNewKey(string rightPart, char key, out int newKeyIndex)
+        private static void GetNewKey(string rightPart, char key, out int newKeyIndex,out char newKey)
         {
-            var newKey = '9';
+            newKey = '9';
             newKeyIndex = 0;
             for (int j = 0; j < rightPart.Length; j++)
             {
@@ -60,8 +59,6 @@ namespace Kata
                     newKeyIndex = j;
                 }
             }
-
-            return newKey;
         }
 
         private static bool IsInValidInput(long inputNum)
